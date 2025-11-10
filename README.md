@@ -44,15 +44,15 @@ During testing, the attacker uses the pretrained history-conditioned diffusion m
 ## Demo
 - SHIFT‑I
   
-  <img src="assets/shift-i.gif" alt="SHIFT‑I" width="520"/>
+  <img src="assets/shift-i.gif" alt="SHIFT‑I" width="180"/>
 
 - SHIFT-O
   
-  <img src="assets/shift-o.gif" alt="SHIFT‑O" width="520"/>
+  <img src="assets/shift-o.gif" alt="SHIFT‑O" width="180"/>
 
 - True States
   
-  <img src="assets/ori.gif" alt="True States" width="520"/>
+  <img src="assets/ori.gif" alt="True States" width="180"/>
 
 ### Main Results
 
