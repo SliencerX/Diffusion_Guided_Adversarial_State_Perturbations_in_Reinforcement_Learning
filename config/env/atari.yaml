@@ -1,0 +1,16 @@
+train:
+  #id: VizdoomBasic-v0
+  #id: highway-v0
+  # id: "airgym:airsim-car-sample-v0"
+  id: "FreewayNoFrameskip-v4"
+  done_on_life_loss: True
+  size: 84
+  max_episode_steps: null
+  
+test:
+  id: ${..train.id}
+  done_on_life_loss: False
+  size: ${..train.size}
+  max_episode_steps: null
+
+keymap: atari/${.train.id}

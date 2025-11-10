@@ -1,0 +1,40 @@
+_target_: agent.AgentConfig
+
+denoiser:
+  _target_: models.diffusion.DenoiserConfig
+  sigma_data: 0.5
+  sigma_offset_noise: 0.15
+  inner_model:
+    _target_: models.diffusion.InnerModelConfig
+    img_channels: 1
+    num_steps_conditioning: 4
+    #Atari
+    cond_channels: 256
+    depths: [2,2]
+    channels: [64,64]
+    attn_depths: [0,0]
+
+    #Airsim
+    # cond_channels: 512
+    # depths: [2,3,4]
+    # channels: [64,128,256]
+    # attn_depths: [0,0,1]
+
+rew_end_model:
+  _target_: models.rew_end_model.RewEndModelConfig
+  lstm_dim: 16
+  img_channels: ${agent.denoiser.inner_model.img_channels}
+  img_size: ${env.train.size}
+  cond_channels: 16
+  depths: [1]
+  channels: [4]
+  attn_depths: [0]
+
+actor_critic:
+  _target_: models.actor_critic.ActorCriticConfig
+  lstm_dim: 16
+  img_channels: ${agent.denoiser.inner_model.img_channels}
+  img_size: ${env.train.size}
+  channels: [4]
+  down: [1]
+
