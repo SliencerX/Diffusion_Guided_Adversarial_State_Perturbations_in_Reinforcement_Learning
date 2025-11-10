@@ -36,7 +36,7 @@ During the training stage, our attacker will collect clean trajectories in order
 
 During testing, the attacker uses the pretrained history-conditioned diffusion model together with the realism autoencoder to generate and inject history-aligned adversarial observations in real time, guided by the victim’s policy to steer samples toward low-value actions.  
 
-**SHIFT-I** conditions on the *perturbed* trajectory (with the last action dropped) to produce a self-consistent imagined trajectory for stronger semantic shifts, while **SHIFT-O** conditions on the *true* states and actions to produce more trajectory-faithful perturbed states.
+**SHIFT-I** conditions on the *perturbed* trajectory (with the last action dropped) to produce a self-consistent imagined trajectory, while **SHIFT-O** conditions on the *true* states and actions to produce more trajectory-faithful perturbed states.
 
 <img src="assets/testing_stage.png" alt="Testing Stage" width="520"/>
 
