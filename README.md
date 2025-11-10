@@ -17,7 +17,7 @@
 
 ## Introduction
 
-This repository provides the **official implementation of the SHIFT attacks** introduced in our NeurIPS 2025 paper *Diffusion Guided Adversarial State Perturbations in Reinforcement Learning*. SHIFT (**Stealthy History-alIgned diFfusion aTtack**) is a **semantic-aware, policy-agnostic diffusion-based attack** that goes beyond traditional $l_p$-norm constraints. Unlike prior pixel-level perturbations, SHIFT generates **realistic, semantics-changing adversarial states** that remain **historically aligned** with the agent’s trajectory to evade detection.  
+This repository provides the **official implementation of the SHIFT attacks** introduced in our NeurIPS 2025 paper *Diffusion Guided Adversarial State Perturbations in Reinforcement Learning*. SHIFT (**Stealthy History-alIgned diFfusion aTtack**) is a **semantic-aware, policy-agnostic diffusion-based attack** that goes beyond traditional $l_p$-norm constraints. Unlike prior pixel-level perturbations, SHIFT generates **realistic, semantics-changing adversarial states** and remain **stealthy** at the same time.  
 
 Our method introduces two variants:
 - **SHIFT-O** — perturbs observations using *true history*, producing semantically altered but trajectory-faithful states.  
