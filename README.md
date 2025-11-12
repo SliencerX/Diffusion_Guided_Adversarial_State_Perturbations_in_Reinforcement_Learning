@@ -122,7 +122,7 @@ The table above presents the performance of **SHIFT-O** and **SHIFT-I** under at
 - Conditional Diffusion Model: `outputs/<date>/<time>/checkpoints/`
   - `state.pt` stores training state; periodic agent copies are kept per `checkpointing.save_agent_every`.
   - Use `utils.get_path_agent_ckpt(<checkpoints_dir>, epoch=-1)` to resolve the latest.
-- Autoencoder: saved to `./ae/` by `autoencoder_atari.py:1`.
+- Autoencoder: saved to `./ae/` by `autoencoder_atari.py`.
 
 ## Paper & Citation
 - Paper: https://openreview.net/forum?id=Ix4or1zPZw&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DNeurIPS.cc%2F2025%2FConference%2FAuthors%23your-submissions)
