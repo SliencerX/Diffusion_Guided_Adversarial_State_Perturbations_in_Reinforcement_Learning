@@ -139,6 +139,9 @@ url={https://openreview.net/forum?id=Ix4or1zPZw}
 }
 ```
 
+## Acknowledgment
+This codebase is built upon [Diffusion World Model (DIAMOND)](https://github.com/eloialonso/diamond).
+
 ### License
 This project is licensed under the [MIT License](LICENSE).
 
